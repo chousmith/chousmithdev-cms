@@ -23,7 +23,7 @@ export async function getStaticPaths() {
   const WP_URL = process.env.WP_URL || 'https://demo.wp-api.org'
 
   const posts = await fetch(WP_URL + '/wp-json/wp/v2/posts?_fields=id').then(res => res.json())
-  
+
   return {
     paths: posts.map(post => {
       return { params: { postId: String(post.id) } }
@@ -34,5 +34,5 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const props = await getCMSStaticProps(Page, { postId: params.postId })
-  return { props, revalidate: 5 }
+  return { props, unstable_revalidate: 5 }
 }

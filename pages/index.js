@@ -22,5 +22,5 @@ export default Page
 
 export async function getStaticProps() {
   const props = await getCMSStaticProps(Page)
-  return { props, revalidate: 5 }
+  return { props, unstable_revalidate: 5 }
 }
