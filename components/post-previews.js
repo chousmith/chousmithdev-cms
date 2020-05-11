@@ -15,5 +15,6 @@ export default function PostPreviews() {
           <div dangerouslySetInnerHTML={{ __html: p.excerpt.rendered }} />
         </div>
       )
+      // <pre>{ JSON.stringify(p, null, 2) }</pre>
   }</CMS>
 }
