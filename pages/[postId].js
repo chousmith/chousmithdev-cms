@@ -3,17 +3,19 @@ import withCMSPage from '../lib/with-cms-page'
 import CMS from '../lib/cms'
 
 import Header from '../components/header'
+import Footer from '../components/footer'
 import Post from '../components/post'
 
 import styles from '../styles/main.module.css'
 
 const Page = withCMSPage(({ postId }) => {
-  return (
+  return <>
     <div className={styles.container}>
       <Header/>
       <Post id={postId}/>
     </div>
-  )
+    <Footer/>
+  </>
 })
 
 export default Page
