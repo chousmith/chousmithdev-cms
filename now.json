@@ -1,1 +1,11 @@
-{"build":{"env":{"WP_URL":"https://dev-chousmithdevcms.pantheonsite.io"}},"env":{"WP_URL":"https://dev-chousmithdevcms.pantheonsite.io"},"name":"chousmithdev-cms"}
+{
+  "build": {
+    "env": {
+      "WP_URL": "https://dev-chousmithdevcms.pantheonsite.io"
+    }
+  },
+  "env": {
+    "WP_URL": "https://dev-chousmithdevcms.pantheonsite.io"
+  },
+  "name": "chousmithdev-cms"
+}
