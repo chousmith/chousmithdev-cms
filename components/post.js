@@ -10,8 +10,6 @@ export default function Post ({ id }) {
       <h2>{post.title.rendered}</h2>
       <small>{post.date}</small>
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-      <br />
-      <Comments id={post.id}/>
     </div>
   }</CMS>
 }
