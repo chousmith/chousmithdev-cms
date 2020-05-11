@@ -1,7 +1,5 @@
 import CMS from '../lib/cms'
 
-import Comments from './comments'
-
 import styles from '../styles/post.module.css'
 
 export default function Post ({ id }) {
