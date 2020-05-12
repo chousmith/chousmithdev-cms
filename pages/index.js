@@ -8,9 +8,11 @@ import PostPreviews from '../components/post-previews'
 
 import styles from '../styles/main.module.css'
 
+import { containerStyle } from '../config/constants'
+
 const Page = withCMSPage(() => {
   return <>
-    <div className={styles.container}>
+    <div className={containerStyle}>
       <Header/>
       <PostPreviews/>
     </div>
