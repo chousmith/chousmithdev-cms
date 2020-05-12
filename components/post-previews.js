@@ -11,10 +11,11 @@ export default function PostPreviews() {
       posts.map(p =>
         <div className={cn(styles.post, styles.excerpt)} key={p.id}>
           <h2><Link href="/[postId]" as={'/' + p.id}><a>{p.title.rendered}</a></Link></h2>
-          <small>{p.date}</small>
+          <small dangerouslySetInnerHTML={{ __html: (p.date).substr(5,2) +'/'+ (p.date).substr(8,2) +'/'+ (p.date).substr(0,4) }} />
           <div dangerouslySetInnerHTML={{ __html: p.excerpt.rendered }} />
         </div>
       )
+      // <small>{p.date}</small>
       // <pre>{ JSON.stringify(p, null, 2) }</pre>
   }</CMS>
 }
